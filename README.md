@@ -21,7 +21,8 @@ If you want a smooth PID Control, you need a stable input. and this method helps
 ***in the picture below, you can see sensor readings that even with using a moving average, it tolerants a lot. and the filtered data that moves only in one direction and makes measurements like PID a lot better:***
 ![Screenshot (700)](https://github.com/user-attachments/assets/7b8fa1b4-ed46-4338-a460-00bbd4ee7227)
 
-**__This Makes your D Term in PID to work correctly; and not taking derivate on false movements (that makes PID unstable)__**
+**__This Makes your D Term in PID to work correctly; and not taking derivate on false movements (that makes PID unstable).__**
+
 the result of correctly tuned PID with PWFilter, **even with a low-res thermocouple reader** like MAX6675 will be something like this:
 ![Screenshot (67f)](https://github.com/user-attachments/assets/03e7ab2d-6058-4120-9d7c-04bc3792c394)
 > *At the end, we even got a stable resolution of **one decimal point** from that sensor too!* feel free to use it on your project, just making sure that you've selected right window size.
