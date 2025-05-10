@@ -18,7 +18,7 @@ Here is an example of appropriate Window Size selection:
 As you know, if you use a common temperature sensor (like <ins>MAX6675</ins>) you can only read new data every **250ms** and with a big scattering range. this prevents us to use typical averagings due to time lags and slow responses.
 If you want a smooth PID Control, you need a stable input. and this method helps you to eliminate noises and even increase accuracy of your data.
 
-***in the picture below, you can see sensor readings that even with using a moving average, tolerants a lot. and the filtered data that moves only in one direction and makes measurements like PID a lot better:***
+***in the picture below, you can see sensor readings that even with using a moving average, it tolerants a lot. and the filtered data that moves only in one direction and makes measurements like PID a lot better:***
 ![Screenshot (700)](https://github.com/user-attachments/assets/7b8fa1b4-ed46-4338-a460-00bbd4ee7227)
 
 **__This Makes your D Term in PID to work correctly; and not taking derivate on false movements that makes PID unstable.__**
