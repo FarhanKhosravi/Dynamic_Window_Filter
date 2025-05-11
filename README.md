@@ -1,4 +1,4 @@
-# Dynamic Window Filter (DWFilter)
+# Dynamic Window Filter (DWFilter)   [![arduino-library-badge](https://www.ardu-badge.com/badge/Dynamic_Window_Filter.svg?)](https://www.ardu-badge.com/Dynamic_Window_Filter)
 "Dynamic Window Filter" is an <ins>**Innovatiove Method**</ins> with an **Ultra-Lightweight** library for filtering and smoothing Slow-Rate incoming data (*from slow sensors, etc.*) without **time lag** and **delay**.
 It has the best usage with slow sensors like **Temperature, Humidity, etc.** (i.g. <ins>MAX6675</ins> For Thermocouple reading); and uses very low amount of **clock cycles** due to it's **simple, but <ins>practical**</ins> function.
 
