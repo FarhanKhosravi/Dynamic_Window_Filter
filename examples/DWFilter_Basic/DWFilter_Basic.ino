@@ -26,9 +26,10 @@
 float n = 0;           // Value for heat increment simulation
 
 
+// Make Window Size smaller/bigger if data scatter is less/more (For MAX6675 the optimal WindowSize is ~0.6)
 float WindowSize = 5;
+
 // Initialize Filter with the given Window Size.
-// Make Window Size smaller/bigger if data scatter is less/more.
 DWFilter myFilter(WindowSize);
 
 
@@ -42,7 +43,7 @@ void loop() {
 
   n += 0.1;     // Slight temperature increment in every loop
 
-  // Generating random data in a small range to simulate sensor scattered data
+  // Generating random data in the range of 5 (=> +-2.5) to simulate sensor scattered data
   float data = random(n, n + 5);
 
   // Showing results in the Plotter
