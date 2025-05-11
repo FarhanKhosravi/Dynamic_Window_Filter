@@ -20,13 +20,13 @@
 
 
 
-#include "DWFilter.h"  // Including the library
+#include <DWFilter.h>  // Including the library
 
 
 
 // Make Window Size smaller/bigger if data scatter is less/more
 // (For MAX6675 the optimal WindowSize is ~0.6 | suggested to use a simple moving average before DWFilter for better results)
-#define WindowSize 5;
+#define WindowSize 5
 
 // Initialize Filter with the given Window Size
 DWFilter myFilter(WindowSize);
