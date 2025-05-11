@@ -1,6 +1,6 @@
 /************************************
 
- ----- Dynamic Window Filter for Arduino / version 1.0.0 / May 2025 -----
+ ----- Dynamic Window Filter for Arduino / version 1.0.2 / May 2025 -----
  -----      By Farhan Khosravi / Licensed under the MIT License     -----
 
 
