@@ -1,6 +1,6 @@
 /************************************
 
- ----- Dynamic Window Filter for Arduino / version 1.0.2 / May 2025 -----
+ ----- Dynamic Window Filter for Arduino / version 1.0.3 / May 2025 -----
  -----      By Farhan Khosravi / Licensed under the MIT License     -----
 
 
@@ -8,7 +8,7 @@
    Slow-Response Sensors like Temperature, Humidity, etc.
  * perfectly suitable for Arduino, ESP32/ESP8266, STM32 and every ArduinoIDE
    Compatible boards/uCs.
- * will be available on Arduino Library Manager.
+ * Fully available on Arduino Library Manager.
 
  * Find more info on GitHub:
    https://github.com/FarhanKhosravi/Dynamic_Window_Filter
