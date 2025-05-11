@@ -26,12 +26,13 @@
 float n = 0;           // Value for heat increment simulation
 
 
-// Initialize Filter with the Window Size
-DWFilter myFilter(5);  // Window Size = 5 ---make it smaller/bigger if data scatter is less/more---
+float WindowSize = 5;
+// Initialize Filter with the given Window Size.
+// Make Window Size smaller/bigger if data scatter is less/more.
+DWFilter myFilter(WindowSize);
 
 
 void setup() {
-
   // Begin Serial for the plotter
   Serial.begin(9600);
 }
@@ -49,7 +50,7 @@ void loop() {
   Serial.print(data);
   Serial.print("\t");
   Serial.print("FilteredData:");
-  Serial.print(myFilter.filter(data));
+  Serial.print(myFilter.filter(data));     // filter() function receives your data, returning the filtered value
   Serial.print("\t");
 
   // Here we show upper & lower boundaries for better illustration - helps you find the best Window Size
