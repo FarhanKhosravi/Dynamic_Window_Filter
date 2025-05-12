@@ -1,23 +1,23 @@
 # Dynamic Window Filter (DWFilter)  [![arduino-library-badge](https://www.ardu-badge.com/badge/Dynamic%20Window%20Filter.svg?)](https://www.ardu-badge.com/Dynamic%20Window%20Filter)
 
-"Dynamic Window Filter" is an <ins>**Innovatiove Method**</ins> with an **Ultra-Lightweight** library for filtering and smoothing Slow-Rate incoming data (*from slow sensors, etc.*) without **time lag** and **delay**.
-It has the best usage with slow sensors like **Temperature, Humidity, etc.** (i.g. <ins>MAX6675</ins> For Thermocouple reading); and uses very low amount of **clock cycles** due to it's **simple, but <ins>practical**</ins> function.
+"Dynamic Window Filter" is an <ins>**Innovative Method**</ins> with an **Ultra-Lightweight** library for filtering and smoothing Slow-Rate incoming data (*from slow sensors, etc.*) without **time lag** and **delay**.
+It is best used with slow sensors like **Temperature, Humidity, etc.** (e.g. <ins>MAX6675</ins> for Thermocouple reading); and uses a very small number of **clock cycles** due to its **simple, yet <ins>practical**</ins> function.
 
 It also suppresses unwanted **direction changes** in the input data, making it ready for sensitive measurements like <ins>**PID Systems**</ins> *(as the **D term** is very sensitive to sudden changes)*
 
-**there's few examples below for more declaration:**
+**There are a few examples below for further clarification:**
 
 
 ## How It Works :
-This method uses a **Window Size** specified by user, and creates a window with that size. then receives new data and if it was within the window range, the window stays remain and your value will be the middle point of the window. elsewhere it will move downside/upside accordingly.
-> The Window Size must be selected according to **how much your data scatters**. best to select the size by *a bit more* than noise range.
+This method uses a **Window Size** specified by user, to create a window of that size. When new data is received, if it falls within the window range, the window remains unchanged, and the output value is set to the midpoint of the window. Otherwise, the window shifts up or down accordingly.
+> The Window Size should be chosen based on **how much your data scatters**. It is best to select a size **slightly larger** than the noise range.
 
 Here is an example of appropriate Window Size selection:
 ![Screenshot (327)](https://github.com/user-attachments/assets/35326bae-d10e-4c69-9f86-7090400dcd15)
 
 ## How it Improves measurements like PID:
-As you know, if you use a common temperature sensor (like <ins>MAX6675</ins>) you can only read new data every **250ms** and with a big scattering range. this prevents us to use typical averagings due to time lags and slow responses.
-If you want a smooth PID Control, you need a stable input. and this method helps you to eliminate noises and even increase accuracy of your data.
+As you know, When using a common temperature sensor (like <ins>MAX6675</ins>) new data is available only every **250ms** and it often has a significant scatter. This prevents typical averaging methods from being effective due to time lags and slow responses.
+For smooth PID Control, a stable input is essential. and this method helps you to eliminate noises and even increase accuracy of your data.
 
 ***in the picture below, you can see sensor readings that even with using a moving average, it tolerants a lot. and the filtered data that moves only in one direction and makes measurements like PID a lot better:***
 ![Screenshot (700)](https://github.com/user-attachments/assets/7b8fa1b4-ed46-4338-a460-00bbd4ee7227)
