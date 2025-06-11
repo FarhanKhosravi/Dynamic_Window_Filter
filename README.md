@@ -26,5 +26,5 @@ For smooth PID Control, a stable input is essential. and this method helps you t
 
 the result of correctly tuned PID with PWFilter, **even with a low-res thermocouple reader** like MAX6675 will be something like this:
 ![Screenshot (67f)](https://github.com/user-attachments/assets/03e7ab2d-6058-4120-9d7c-04bc3792c394)
-> *At the end, we even got a stable resolution of **one decimal point** from that sensor too!* feel free to use it on your project, just making sure that you've selected right window size.
+> *In the end, we achieved stable precision down to **one decimal place** with that sensor too!* Feel free to use it in your project—just be sure to select the right window size.
 
